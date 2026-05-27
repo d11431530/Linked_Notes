@@ -1,0 +1,66 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #f8fafc;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+
+svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.link {
+    stroke: #cbd5e1; 
+    stroke-width: 2px;
+    stroke-opacity: 0.6;
+}
+
+.node text {
+    font-size: 12px;
+    font-weight: 600;
+    fill: #334155;
+    pointer-events: none;
+    user-select: none;
+    text-shadow: 0 1px 3px rgba(255,255,255,0.8);
+}
+
+.node-hub circle {
+    fill: #3b82f6;
+    stroke: #eff6ff;
+    stroke-width: 3px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    transition: fill 0.2s;
+}
+.node-hub:hover circle { fill: #2563eb;}
+
+.node-note rect {
+    fill: #10b981; 
+    stroke: #ecfdf5;
+    stroke-width: 3px;
+    transition: fill 0.2s;
+}
+.node-note:hover rect { fill: #059669; }
+
+.node-has-content { stroke: #fbbf24 !important; stroke-width: 3px !important; stroke-dasharray: 4;}
+
+
+textarea::-webkit-scrollbar {
+    width: 8px;
+}
+textarea::-webkit-scrollbar-track {
+    background: #f1f5f9; 
+    border-radius: 4px;
+}
+textarea::-webkit-scrollbar-thumb {
+    background: #cbd5e1; 
+    border-radius: 4px;
+}
+textarea::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8; 
+}
